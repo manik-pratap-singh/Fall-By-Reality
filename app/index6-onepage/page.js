@@ -1,0 +1,687 @@
+import Counter from "@/components/Counter";
+import Hero from "@/components/Hero";
+import { Testimonials6 } from "@/components/testimonials/Testimonials6";
+import WhatWeProvide from "@/components/WhatWeProvide";
+import TekprofLayout from "@/layout/TekprofLayout";
+import Link from "next/link";
+const page = () => {
+  const singlePage = [
+    { id: 1, title: "Home", link: "#home" },
+    { id: 2, title: "Features", link: "#features" },
+    { id: 3, title: "About", link: "#about" },
+    { id: 4, title: "Projects", link: "#projects" },
+    { id: 5, title: "Contact", link: "#contact" },
+    { id: 6, title: "Testimonials", link: "#testimonials" },
+    { id: 7, title: "Blog", link: "#blog" },
+  ];
+  return (
+    <TekprofLayout
+      header={6}
+      footer={6}
+      rootElements={{
+        "--tekprof-base-font": ' "Roboto", sans-serif',
+        "--tekprof-heading-font": '"Poppins", sans-serif',
+        "--tekprof-primary-color": "#30f0b6",
+        "--tekprof-secondary-color": "#674df3",
+      }}
+      bodyClass="home-6"
+      singleMenu={singlePage}
+    >
+      {/* Slider Section Start */}
+      <Hero />
+      {/* Slider Section End */}
+      {/* Feature Area Start */}
+      <section id="features" className="feature-area-two rel z-1">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="feature-item style-three mt-25 wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-cloud-1" />
+                </div>
+                <h4>
+                  <Link href="service-details">Trusted Partner</Link>
+                </h4>
+                <p>More than a vendor—we align with your goals, act with integrity, and work as an extension of your team</p>
+                <Link className="more-btn" href="service-details">
+                  <i className="far fa-angle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="feature-item style-three wow fadeInDown delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-technical-support" />
+                </div>
+                <h4>
+                  <Link href="service-details">Technical Support</Link>
+                </h4>
+                <p>24/7 expert help to solve hardware, software, or network issues—keeping your systems running smoothly.
+
+                </p>
+                <Link className="more-btn" href="service-details">
+                  <i className="far fa-angle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="feature-item style-three mt-45 wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-data" />
+                </div>
+                <h4>
+                  <Link href="service-details">Digital Marketing</Link>
+                </h4>
+                <p>Boost your brand with digital strategies—SEO, social media, email, and more—to reach and engage your audience</p>
+                <Link className="more-btn" href="service-details">
+                  <i className="far fa-angle-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="feature-item style-three mt-25 wow fadeInDown delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-cyber-security-1" />
+                </div>
+                <h4>
+                  <Link href="service-details">IT Consulting</Link>
+                </h4>
+                <p>We help businesses align their tech strategies with goals—offering expert guidance on cloud, security, and data solutions</p>
+                <Link className="more-btn" href="service-details">
+                  <i className="far fa-angle-right" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Feature Area End */}
+      {/* About Area start */}
+      <section
+        id="about"
+        className="about-area-three pt-25 rpt-0 pb-100 rpb-65 rel z-1"
+      >
+        <div className="container">
+          <div className="row align-items-center gap-100">
+            <div className="col-lg-6">
+              <div className="about-three-image rel z-1 mb-30 rmb-65 wow fadeInRight delay-0-2s">
+                <img src="\assets\images\award.jpeg" alt="About" />
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-two-content rel z-1 wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-60 rmb-40">
+                  <span className="sub-title mb-15">About Company</span>
+                  <h2>
+                    Best talent, Competitive Cost, Incredible IT Service
+                    Infrastructure
+                  </h2>
+                </div>
+                <div className="row gap-40">
+                  <div className="col-md-6">
+                    <div className="service-item style-three">
+                      <div className="icon">
+                        <i className="flaticon-cloud-1" />
+                      </div>
+                      <h4>
+                        <Link href="service-details">
+                          Awards Winning Company
+                        </Link>
+                      </h4>
+                      <p>
+                        Recognized for excellence in innovation, service, and performance by top industry experts
+                      </p>
+                      <Link href="service-details" className="read-more">
+                        Read More <i className="far fa-arrow-right" />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="service-item style-three">
+                      <div className="icon">
+                        <i className="flaticon-cyber-security-1" />
+                      </div>
+                      <h4>
+                        <Link href="service-details">
+                          Startup IT Solution &amp; Business Dev
+                        </Link>
+                      </h4>
+                      <p>
+                        We empower startups with tailored IT solutions and business strategies—helping them launch, grow, and scale efficiently
+                      </p>
+                      <Link href="service-details" className="read-more">
+                        Read More <i className="far fa-arrow-right" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="about-bg-shape">
+          <img src="assets/images/background/about-bg-shape.png" alt="About" />
+        </div>
+      </section>
+      {/* About Area end */}
+      {/* What We Provide Area Start */}
+      <WhatWeProvide />
+      {/* What We Provide Area End */}
+      {/* Consultations Area start */}
+      <section className="consultations-area pt-75 rpt-45 rel z-1">
+        <div className="container container-1440">
+          <div className="row no-gap align-items-end">
+            <div className="col-xl-6">
+              <div className="consultations-content mt-55 wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-30">
+                  <span className="sub-title mb-15">
+                    Need Any Consultations ?
+                  </span>
+                  <h2>We’re Ready to Growth IT Business</h2>
+                </div>
+                <div
+                  className="consultations-bottom bgc-secondary text-white bgs-cover p-80 py-40"
+                  style={{
+                    backgroundImage:
+                      "url(assets/images/about/consultations-bg.png)",
+                  }}
+                >
+                  <ul className="list-style-three mb-15">
+                    <li>Bringing new IT solutions to the market</li>
+                    <li>
+                      To be included the list of the best 100 IT companies
+                    </li>
+                  </ul>
+                  <div className="about-btns">
+                    <Link href="about" className="theme-btn mt-15">
+                      Get Free Quote <i className="fas fa-long-arrow-right" />
+                    </Link>
+                    <div className="phone no. mt-15">
+
+                      <div className="content">
+                        <span>phone no.</span>
+                        <br />
+                        <a href="callto:01204232140"> 01204232140</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="consultations-video mt-55 wow fadeInRight delay-0-2s">
+                <img
+                  src="\assets\images\nac.jpeg"
+                  alt="Consultations"
+                />
+                <a
+                  href="https://www.youtube.com/watch?v=9Y7ma241N8k"
+                  className="mfp-iframe video-play"
+                >
+                  <i className="fas fa-play" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Consultations Area end */}
+      {/* Statistics Area start */}
+      <section className="statistics-area-three pt-130 rpt-100 pb-100 rpb-80 text-white bgc-gray home-6">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-7">
+              <div className="row rmb-35">
+                <div className="col-xl-4 col-sm-6">
+                  <div className="counter-item-three counter-text-wrap wow fadeInDown delay-0-3s">
+                    <i className="flaticon-protection-1" />
+                    <span
+                      className="count-text plus"
+                      data-speed={3000}
+                      data-stop={2563}
+                    >
+                      <Counter end={2563} />
+                    </span>
+                    <span className="counter-title">Project Complete</span>
+                  </div>
+                </div>
+                <div className="col-xl-4 col-sm-6">
+                  <div className="counter-item-three counter-text-wrap mt-20 wow fadeInUp delay-0-3s">
+                    <i className="flaticon-recovery" />
+                    <span
+                      className="count-text percent"
+                      data-speed={3000}
+                      data-stop="98.9"
+                    >
+                      <Counter end={98.9} decimals={1} />
+                    </span>
+                    <span className="counter-title">Clients Happy</span>
+                  </div>
+                </div>
+                <div className="col-xl-4 col-sm-6">
+                  <div className="counter-item-three counter-text-wrap wow fadeInDown delay-0-3s">
+                    <i className="flaticon-cyber-security-2" />
+                    <span
+                      className="count-text plus"
+                      data-speed={3000}
+                      data-stop="35.6"
+                    >
+                      <Counter end={35.6} decimals={1} />
+                    </span>
+                    <span className="counter-title">Years Experience</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="statistics-two-content mb-30 rmb-0 wow fadeInUp delay-0-2s">
+                <div className="section-title mb-30">
+                  <h3>
+                    Tekprof Is Partnered With 10k+ Fastest Growing Companies
+                    From 2010
+                  </h3>
+                </div>
+                <p>
+                  Tekprof has been a trusted partner for thousands of high-growth companies—offering innovative IT solutions,
+                  strategic guidance, and unmatched reliability to fuel their digital transformation journeys
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Statistics Area end */}
+      {/* Project Area Two Start */}
+      <section id="projects" className="project-area-three rel z-2">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="project-item-two wow fadeInUp delay-0-2s">
+                <img
+                  src="\assets\images\mad1.jpeg"
+                  alt="Projects"
+                />
+                <div className="content">
+                  <a
+                    className="plus"
+                    href="\assets\images\mad1.jpeg"
+                  >
+                    <i className="fal fa-plus" />
+                  </a>
+                  <h4>
+                    <Link href="service-details">
+                      Mobile Application Development
+                    </Link>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="project-item-two wow fadeInUp delay-0-4s">
+                <img
+                  src="\assets\images\mad2.jpeg"
+                  alt="Projects"
+                />
+                <div className="content">
+                  <a
+                    className="plus"
+                    href="\assets\images\mad2.jpeg"
+                  >
+                    <i className="fal fa-plus" />
+                  </a>
+                  <h4>
+                    <Link href="service-details">
+                      Mobile Application Development
+                    </Link>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="project-item-two wow fadeInUp delay-0-6s">
+                <img
+                  src="\assets\images\mad3.jpeg"
+                  alt="Projects"
+                />
+                <div className="content">
+                  <a
+                    className="plus"
+                    href="\assets\images\mad3.jpeg"
+                  >
+                    <i className="fal fa-plus" />
+                  </a>
+                  <h4>
+                    <Link href="service-details">
+                      Mobile Application Development
+                    </Link>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="project-item-two wow fadeInUp delay-0-8s">
+                <img
+                  src="\assets\images\mad4.jpeg"
+                  alt="Projects"
+                />
+                <div className="content">
+                  <a
+                    className="plus"
+                    href="\assets\images\mad4.jpeg"
+                  >
+                    <i className="fal fa-plus" />
+                  </a>
+                  <h4>
+                    <Link href="service-details">
+                      Mobile Application Development
+                    </Link>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Project Area Two End */}
+      {/* Services Area Three start */}
+      <section className="services-area-three py-100 rpy-70 rel z-1">
+        <div className="container">
+          <div className="row gap-100 align-items-center">
+            <div className="col-lg-5">
+              <div className="services-content-three mb-30 rmb-65 wow fadeInUp delay-0-2s">
+                <div className="section-title mb-30">
+                  <span className="sub-title mb-15">Amazing Services</span>
+                  <h2>We Provide Best IT Services to Growth you Business</h2>
+                </div>
+                <p>
+                  We deliver smart IT solutions that help your business grow faster, stay secure, and stand out in the digital world
+                </p>
+                <ul className="list-style-one pt-5">
+                  <li>
+                    <i className="far fa-check-circle" /> Comprehensive UI/UX
+                    Assessment
+                  </li>
+                  <li>
+                    <i className="far fa-check-circle" /> Deep Contextual
+                    Research and 360° Planning
+                  </li>
+                  <li>
+                    <i className="far fa-check-circle" /> Wireframing &amp;
+                    Prototyping
+                  </li>
+                </ul>
+                <Link href="services" className="theme-btn mt-45">
+                  View All Services <i className="fas fa-long-arrow-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="service-item-five wow fadeInUp delay-0-2s">
+                    <div className="icon">
+                      <i className="flaticon-idea" />
+                    </div>
+                    <h4>
+                      <Link href="service-details">Digital Consulting</Link>
+                    </h4>
+                    <p>
+                      We guide businesses in leveraging digital technologies to streamline operations,
+                      boost customer engagement, and drive sustainable growth
+                    </p>
+                  </div>
+                  <div className="service-item-five wow fadeInUp delay-0-2s">
+                    <div className="icon">
+                      <i className="flaticon-grow" />
+                    </div>
+                    <h4>
+                      <Link href="service-details">Apps Solutions</Link>
+                    </h4>
+                    <p>
+                      From mobile to web apps, we build robust, scalable, and user-centric applications
+                      tailored to solve real-world business problems
+                    </p>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="service-item-five mt-60 wow fadeInUp delay-0-4s">
+                    <div className="icon">
+                      <i className="flaticon-data-protection" />
+                    </div>
+                    <h4>
+                      <Link href="service-details">UX/UI Strategy</Link>
+                    </h4>
+                    <p>
+                      We craft intuitive and visually engaging experiences that align with user behavior
+                      and business goals—turning interaction into satisfaction
+                    </p>
+                  </div>
+                  <div className="service-item-five wow fadeInUp delay-0-4s">
+                    <div className="icon">
+                      <i className="flaticon-graphic-design" />
+                    </div>
+                    <h4>
+                      <Link href="service-details">Cyber Security</Link>
+                    </h4>
+                    <p>We protect your digital infrastructure with advanced cybersecurity practices—ensuring data integrity,
+                      compliance, and peace of mind.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="servcies-bg-shape">
+          <img src="assets/images/shapes/services-bg-shape.png" alt="Shape" />
+        </div>
+      </section>
+      {/* Services Area Three end */}
+      {/* Contact Form Section Start */}
+      <section
+        id="contact"
+        className="contact-form-area py-130 rpy-100 bgs-cover"
+        style={{
+          backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
+        }}
+      >
+        <div className="container">
+          <div className="row gap-100 align-items-center">
+            <div className="col-lg-7">
+              <div className="contact-form-two bg-white p-80 rmb-55 wow fadeInRight delay-0-2s">
+                <div className="section-title mb-30">
+                  <h3>Get In Touch With Us</h3>
+                </div>
+                {/* <form
+                  className="form-style-one"
+                  action="#"
+                  name="contact-form"
+                  method="post"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          defaultValue
+                          placeholder="Full name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          className="form-control"
+                          defaultValue
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          type="email"
+                          id="emailid"
+                          name="email"
+                          className="form-control"
+                          defaultValue
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows={3}
+                          placeholder="Message"
+                          required
+                          defaultValue={""}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-xl-12">
+                      <div className="form-group mb-0">
+                        <button type="submit" className="theme-btn mt-15 w-100">
+                          send message <i className="far fa-long-arrow-right" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form> */}
+
+
+                <form
+                onSubmit={(ev)=>{
+                  console.log(ev,"hel")
+                }}
+                  className="form-style-one"
+                  // action="https://formsubmit.co/singhpratapmanik@gmail.com"
+                  // method="POST"
+                >
+                  <input type="hidden" name="_captcha" value="false" />
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          placeholder="Full name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          className="form-control"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          type="email"
+                          id="emailid"
+                          name="email"
+                          className="form-control"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows={3}
+                          placeholder="Message"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-xl-12">
+                      <div className="form-group mb-0">
+                        <button type="submit" className="theme-btn mt-15 w-100">
+                          send message <i className="far fa-long-arrow-right" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+
+
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-40">
+                  <span className="sub-title mb-10">Need Consultations ?</span>
+                  <h2>Have A Project? We Would Love To Hear From You.</h2>
+                </div>
+                <div className="contact-info-part-two">
+                  <div className="contact-info-item-two">
+                    <div className="icon">
+                      <i className="far fa-map-marked-alt" />
+                    </div>
+                    <div className="content">
+                      <span>Location</span>
+                      <h5>109, udyog kendra 2, Ecotech 3rd, Greater noida, Uttar Pradesh 201306</h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item-two">
+                    <div className="icon">
+                      <i className="far fa-envelope-open-text" />
+                    </div>
+                    <div className="content">
+                      <span>Email Us</span>
+                      <h5>
+                        <a href="mailto:support@fallbyreality.com">support@fallbyreality.com</a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item-two">
+                    <div className="icon">
+                      <i className="far fa-phone" />
+                    </div>
+                    <div className="content">
+                      <span>Heplline</span>
+                      <h5>
+                        <a href="call to:01204232140">01204232140</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Contact Form Section End */}
+      {/* Testimonials Area Three Start */}
+      <Testimonials6 />
+      {/* Testimonials Area Three End */}
+      {/* Blog Area Two start */}
+      ?    </TekprofLayout>
+  );
+};
+export default page;
